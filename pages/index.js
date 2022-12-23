@@ -192,7 +192,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className='text-center w-4.5/ mb-2 text-lg flex justify-center gap-1 py-0 text-gray-600 dark:text-white'> Handcrafted by me <AiFillCopyrightCircle/> ayushmanduttpandey
+        <footer className='text-center mb-2 text-lg flex justify-center gap-1 py-2 text-gray-600 dark:text-white'> Handcrafted by © ayushmanduttpandey
         </footer>
       </main>
     </div>
