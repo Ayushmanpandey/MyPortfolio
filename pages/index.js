@@ -187,7 +187,7 @@ export default function Home() {
             <div className='basis-1/3 flex-1'>
               <Image src={finalPortfolioMockup} className='rounded-2xl object-cover width={"100%"} height={"100%"} layout="responsive"' />
               <div className=' justify-center text-center'>
-              <button className="transition ease-in-out delay-150 w-32 hover:-translate-y-1 hover:scale-110  bg-teal-500 hover:bg-indigo-500 duration-600 justify-center justify-items-center text-white font-bold py-2 px-4 rounded-2xl ring-emerald-400 ring-1" ><a href=''>View Project</a></button>
+              <button className="transition ease-in-out delay-150 w-32 hover:-translate-y-1 hover:scale-110  bg-teal-500 hover:bg-indigo-500 duration-600 justify-center justify-items-center text-white font-bold py-2 px-4 rounded-2xl ring-emerald-400 ring-1" ><a href='https://iamayushmanduttpandey.vercel.app/'>View Project</a></button>
             </div>
             </div>
           </div>
