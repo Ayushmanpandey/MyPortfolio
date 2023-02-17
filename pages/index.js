@@ -13,6 +13,7 @@ import mockupEbike from "../public/mockupEbike.png";
 import mockupLogin from "../public/mockupLogin.png";
 import finalmockupQuiz from "../public/finalmockupQuiz.png";
 import finalPortfolioMockup from "../public/finalPortfolioMockup.png";
+import dashboardmockup from "../public/dashboardmockup.png";
 import { useState } from 'react';
 
 export default function Home() {
@@ -188,6 +189,12 @@ export default function Home() {
               <Image src={finalPortfolioMockup} className='rounded-2xl object-cover width={"100%"} height={"100%"} layout="responsive"' />
               <div className=' justify-center text-center'>
               <button className="transition ease-in-out delay-150 w-32 hover:-translate-y-1 hover:scale-110  bg-teal-500 hover:bg-indigo-500 duration-600 justify-center justify-items-center text-white font-bold py-2 px-4 rounded-2xl ring-emerald-400 ring-1" ><a href='https://iamayushmanduttpandey.vercel.app/'>View Project</a></button>
+            </div>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={dashboardmockup} className='rounded-2xl object-cover width={"100%"} height={"100%"} layout="responsive"' />
+              <div className=' justify-center text-center'>
+              <button className="transition ease-in-out delay-150 w-32 hover:-translate-y-1 hover:scale-110  bg-teal-500 hover:bg-indigo-500 duration-600 justify-center justify-items-center text-white font-bold py-2 px-4 rounded-2xl ring-emerald-400 ring-1" ><a href='https://ayushmanpandey.github.io/DashboardProj/'>View Project</a></button>
             </div>
             </div>
           </div>
