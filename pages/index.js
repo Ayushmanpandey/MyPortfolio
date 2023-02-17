@@ -33,7 +33,7 @@ export default function Home() {
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="dark:text-white text-2xl" /></li>
               <li><button>
               <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-               href="https://drive.google.com/file/d/1Y1oxx890C3tUxm7OkFRhcpiARhXt414K/view?usp=share_link">Resume</a>
+               href="https://drive.google.com/file/d/1GR4sf_47hN7ulszTIlIyJtsROZnrDLld/view?usp=sharing">Resume</a>
             </button></li>
             </ul>
           </nav>
