@@ -4,79 +4,6 @@ import {AiFillTwitterCircle, AiFillGithub, AiFillLinkedin,AiFillCopyrightCircle,
 import Head from 'next/head'
 import { useState, useEffect } from 'react';
 
-const animationStyles = `
-  @keyframes wave {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    60% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
-  }
-  
-  @keyframes popOut {
-    0% { transform: scale(1) translateY(0); }
-    50% { transform: scale(1.05) translateY(-10px); }
-    100% { transform: scale(1.1) translateY(-20px); }
-  }
-  
-  @keyframes slideInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .wave-hand {
-    animation: wave 0.6s ease-in-out infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-  }
-  
-  .image-popout:hover {
-    animation: popOut 0.4s ease-out forwards;
-  }
-  
-  .service-card {
-    animation: slideInUp 0.6s ease-out;
-  }
-  
-  .service-card:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .service-card:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-`;
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -161,10 +88,10 @@ export default function Home() {
                   </span>
                 </button>
               </li>
-              <li><button>
-              <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
+              <li>
+              <a className='bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-4 py-2 rounded-lg ml-8 hover:shadow-lg hover:scale-105 transition-all duration-300'
                href="https://drive.google.com/file/d/1QeTo_QL_E4-tHdJ525jMFgknF1wjvfVP/view?usp=sharing">Resume</a>
-            </button></li>
+            </li>
             </ul>
           </nav>
           <div className='text-center p-10'>
@@ -331,7 +258,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/Food%20App%20Design%20practice' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/Food%20App%20Design%20practice' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 2 */}
@@ -345,7 +272,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/MovieApp%20Figma%20redesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/MovieApp%20Figma%20redesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 3 */}
@@ -359,7 +286,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/Figma%20ios%20clock%20redesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/Figma%20ios%20clock%20redesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 4 */}
@@ -373,7 +300,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/figmaLandingpageDesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://github.com/Ayushmanpandey/DesigningProjects/tree/main/figmaLandingpageDesign' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
               </div>
             </div>
@@ -396,7 +323,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 2 */}
@@ -410,7 +337,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://ayushmanpandey.github.io/Login-SignupForm/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://ayushmanpandey.github.io/Login-SignupForm/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 3 */}
@@ -424,7 +351,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://iamayushmanduttpandey.vercel.app/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://iamayushmanduttpandey.vercel.app/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
 
                 {/* Project 4 */}
@@ -438,7 +365,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a href='https://ayushmanpandey.github.io/DashboardProj/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
+                  <a href='https://ayushmanpandey.github.io/DashboardProj/' className='inline-flex items-center justify-center whitespace-nowrap px-6 py-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 group/btn'>View <span className='ml-2 group-hover/btn:translate-x-1 transition-transform'>→</span></a>
                 </div>
               </div>
             </div>
@@ -446,7 +373,7 @@ export default function Home() {
             {/* CTA Section */}
             <div className='text-center py-12'>
               <p className='text-lg text-gray-600 dark:text-gray-400 mb-6'>Want to explore more of my work?</p>
-              <a href="mailto:thisisayushmann@gmail.com" className='inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold rounded-full text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl group/cta'>
+              <a href="mailto:thisisayushmann@gmail.com" className='inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg group/cta'>
                 <span className='group-hover/cta:-translate-x-1 transition-transform'>✉️</span>
                 <span className='ml-3'>Get in Touch</span>
               </a>
@@ -494,7 +421,7 @@ export default function Home() {
               <div>
                 <h4 className='text-lg font-bold dark:text-white mb-6'>Get In Touch</h4>
                 <p className='text-gray-600 dark:text-gray-400 mb-4'>Have a project in mind? Let's talk!</p>
-                <a href="mailto:payushman8@gmail.com" className='inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300'>
+                <a href="mailto:payushman8@gmail.com" className='inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300'>
                   <span>📧</span>
                   <span>Email Me</span>
                 </a>
