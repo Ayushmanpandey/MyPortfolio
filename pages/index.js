@@ -57,7 +57,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section className=" min-h-screen ">
+        <section id="home" className=" min-h-screen ">
           <nav className="py-5 mb-6 flex justify-between">
             <h1 className='text-xl font-burtons dark:text-white font-semibold'>Portfolio</h1>
             <ul className='flex items-center'>
@@ -123,7 +123,7 @@ export default function Home() {
         </section>
 
         {/* <!--- SERVICES SECTION ---!> */}
-        <section className='relative py-0 px-0'>
+        <section id="services" className='relative py-0 px-0'>
           {/* Decorative background element */}
           <div className='absolute -left-20 top-20 w-72 h-72 bg-teal-300 dark:bg-teal-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           <div className='absolute -right-20 bottom-40 w-96 h-96 bg-cyan-300 dark:bg-cyan-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
@@ -232,7 +232,7 @@ export default function Home() {
 
         {/* <!--- ORIGINAL CARDS - REMOVED TO FIT NEW DESIGN ---!> */}
         {/* SECTION - MY WORK */}
-        <section className='relative py-10 px-0'>
+        <section id="projects" className='relative py-10 px-0'>
           {/* Decorative background */}
           <div className='absolute -left-20 -top-20 w-80 h-80 bg-purple-300 dark:bg-purple-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           
@@ -385,7 +385,7 @@ export default function Home() {
           </div>
         </section>
         {/* FOOTER */}
-        <footer className='relative mt-10 pt-10 pb-10 border-t border-gray-200 dark:border-gray-700'>
+        <footer id="contact" className='relative mt-10 pt-10 pb-10 border-t border-gray-200 dark:border-gray-700'>
           {/* Decorative background */}
           <div className='absolute -right-40 -bottom-20 w-96 h-96 bg-teal-300 dark:bg-teal-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           
@@ -414,10 +414,10 @@ export default function Home() {
               <div>
                 <h4 className='text-lg font-bold dark:text-white mb-6'>Quick Links</h4>
                 <ul className='space-y-3'>
-                  <li><a href='#' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Home</a></li>
-                  <li><a href='#' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Services</a></li>
-                  <li><a href='#' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Projects</a></li>
-                  <li><a href='#' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Contact</a></li>
+                  <li><a href='#home' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Home</a></li>
+                  <li><a href='#services' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Services</a></li>
+                  <li><a href='#projects' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Projects</a></li>
+                  <li><a href='#contact' className='text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors'>Contact</a></li>
                 </ul>
               </div>
 
