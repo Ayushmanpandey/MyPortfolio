@@ -58,7 +58,7 @@ export default function Home() {
       </Head>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className=" min-h-screen ">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-5 mb-6 flex justify-between">
             <h1 className='text-xl font-burtons dark:text-white font-semibold'>Portfolio</h1>
             <ul className='flex items-center'>
               <li>
@@ -94,45 +94,49 @@ export default function Home() {
             </li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
-            <h2 className='text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>{typewriterText}<span className="animate-pulse">|</span></h2>
-            <h3 className='text-2xl py-2 font-medium md:text-3xl dark:text-gray-300'>Frontend Developer and Designer</h3>
-            <p className='text-md py-4 leading-8 text-gray-800 font-semibold max-w-lg mx-auto dark:text-white'>I design and code beautifully simple ideas of someones's imagination, and I love what I do.</p>
-            <p className='text-xl pt-2 font-medium  dark:text-gray-200'>Living, learning, & leveling up one day at a time.</p>
-          </div>
-          <div className='text-5xl flex justify-center gap-8 py-3 text-gray-700 dark:text-white'>
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/ayushman-dutt-pandey-741b391a4/" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
-              <AiFillLinkedin />
-            </a>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-5">
+            <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96 animate-float will-change-transform hover:scale-105 transition-transform duration-500 pop-out' tabIndex={0}>
+              <img src="/dev-ed-wave.png" alt="Dev" className="object-cover w-full h-full" />
+            </div>
+            <div className="flex flex-col items-center md:items-start">
+              <div className='text-center md:text-left p-5 md:p-10'>
+                <h2 className='text-3xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>{typewriterText}<span className="animate-pulse">|</span></h2>
+                <h3 className='text-2xl py-2 font-medium md:text-3xl dark:text-gray-300'>Frontend Developer and Designer</h3>
+                <p className='text-md py-4 leading-8 text-gray-800 font-semibold max-w-lg mx-auto md:mx-0 dark:text-white'>I design and code beautifully simple ideas of someones's imagination, and I love what I do.</p>
+                <p className='text-xl pt-2 font-medium  dark:text-gray-200'>Living, learning, & leveling up one day at a time.</p>
+              </div>
+              <div className='text-5xl flex justify-center md:self-center gap-8 py-3 text-gray-700 dark:text-white'>
+                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/ayushman-dutt-pandey-741b391a4/" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
+                  <AiFillLinkedin />
+                </a>
 
-            <a aria-label="Instagram" href="https://www.instagram.com/ayushmanduttpandey/" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:-rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
-              <AiFillInstagram />
-            </a>
+                <a aria-label="Instagram" href="https://www.instagram.com/ayushmanduttpandey/" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:-rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
+                  <AiFillInstagram />
+                </a>
 
-            <a aria-label="GitHub" href="https://github.com/Ayushmanpandey" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
-              <AiFillGithub />
-            </a>
-          </div>
-          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 animate-float will-change-transform hover:scale-105 transition-transform duration-500 pop-out' tabIndex={0}>
-            <img src="/dev-ed-wave.png" alt="Dev" className="object-cover w-full h-full" />
+                <a aria-label="GitHub" href="https://github.com/Ayushmanpandey" className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 dark:bg-white/5 text-current shadow-sm hover:shadow-2xl transform transition-transform duration-300 hover:-translate-y-1 hover:scale-110 hover:rotate-6 focus:outline-none focus:ring-4 focus:ring-teal-200/30">
+                  <AiFillGithub />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* <!--- SERVICES SECTION ---!> */}
-        <section className='relative py-20 px-0'>
+        <section className='relative py-10 px-0'>
           {/* Decorative background element */}
           <div className='absolute -left-20 top-20 w-72 h-72 bg-teal-300 dark:bg-teal-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           <div className='absolute -right-20 bottom-40 w-96 h-96 bg-cyan-300 dark:bg-cyan-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           
           <div className='relative z-10'>
-            <div className='text-center mb-20'>
+            <div className='text-center mb-10'>
               <span className='inline-block px-4 py-2 bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-300 rounded-full text-sm font-semibold mb-4'>EXPERTISE</span>
               <h2 className='text-5xl md:text-6xl font-bold dark:text-white mb-4'>What I <span className='bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent'>Create</span></h2>
               <p className='text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>Crafting beautiful digital experiences with modern technologies and creative problem-solving</p>
               <div className='w-20 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mt-8'></div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-20'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-10'>
               {/* SERVICE CARD 1 - Responsive Design */}
               <div className='service-card group relative'>
                 <div className='absolute inset-0 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 dark:from-teal-500/10 dark:to-cyan-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
@@ -228,12 +232,12 @@ export default function Home() {
 
         {/* <!--- ORIGINAL CARDS - REMOVED TO FIT NEW DESIGN ---!> */}
         {/* SECTION - MY WORK */}
-        <section className='relative py-20 px-0'>
+        <section className='relative py-10 px-0'>
           {/* Decorative background */}
           <div className='absolute -left-20 -top-20 w-80 h-80 bg-purple-300 dark:bg-purple-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           
           <div className='relative z-10'>
-            <div className='text-center mb-20'>
+            <div className='text-center mb-10'>
               <span className='inline-block px-4 py-2 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300 rounded-full text-sm font-semibold mb-4'>PORTFOLIO</span>
               <h2 className='text-5xl md:text-6xl font-bold dark:text-white mb-4'>Featured <span className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Projects</span></h2>
               <p className='text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>A selection of designs and projects I've created that showcase my skills and creativity</p>
@@ -241,7 +245,7 @@ export default function Home() {
             </div>
 
             {/* Designs Section */}
-            <div className='mb-24'>
+            <div className='mb-12'>
               <div className='flex items-center gap-3 mb-12'>
                 <div className='w-1 h-8 bg-gradient-to-b from-purple-500 to-pink-500'></div>
                 <h3 className='text-3xl font-bold dark:text-white'>UI/UX Design Mockups</h3>
