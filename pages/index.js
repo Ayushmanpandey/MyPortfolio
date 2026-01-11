@@ -94,7 +94,7 @@ export default function Home() {
             </li>
             </ul>
           </nav>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-5">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-5 pt-20">
             <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96 animate-float will-change-transform hover:scale-105 transition-transform duration-500 pop-out' tabIndex={0}>
               <img src="/dev-ed-wave.png" alt="Dev" className="object-cover w-full h-full" />
             </div>
@@ -123,7 +123,7 @@ export default function Home() {
         </section>
 
         {/* <!--- SERVICES SECTION ---!> */}
-        <section className='relative py-10 px-0'>
+        <section className='relative py-0 px-0'>
           {/* Decorative background element */}
           <div className='absolute -left-20 top-20 w-72 h-72 bg-teal-300 dark:bg-teal-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
           <div className='absolute -right-20 bottom-40 w-96 h-96 bg-cyan-300 dark:bg-cyan-900/30 rounded-full blur-3xl opacity-20 pointer-events-none'></div>
